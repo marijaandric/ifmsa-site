@@ -1,9 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 :root {
     --primary-color: #5c5ea5;
-    --primary-color-darker: #141524;
+    --primary-color-darker: #535592;
+    --primary-color-light: #7e81da;
     --secondary-color: #b84352;
     --background-color: #f8f9fa;
-    --font-size-base: 16px;
+    --text-light: white;
+    --text-dark: #1b1b1b;
+    --padding-base: 3rem;
+    --border-radius: 20px;
+}
+
+body {
+  color: var(--text-dark);
+  padding: var(--padding-base);
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: var(--text-dark);
+}
+
+button{
+  border-radius: var(--border-radius);
+}
+
+input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: var(--primary-color-darker);
+  box-shadow: 0 0 5px var(--primary-color-light);
+}
+
+select {
+  width: 100%;
+  max-width: 200px;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+select:focus {
+  border-color: var(--primary-color-darker);
+  box-shadow: 0 0 5px var(--primary-color-light);
+}
+
+select:hover {
+  border-color: var(--primary-color-light);
+}
+
+
+.flex-row
+{
+  display: flex;
+  flex-direction: row;
 }
