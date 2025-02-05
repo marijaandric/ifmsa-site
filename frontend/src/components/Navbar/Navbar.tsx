@@ -1,53 +1,37 @@
-import { SetStateAction, useState } from 'react';
-import './NavBar.css';
+import { useState } from "react";
+import "./Navbar.css";
 import logo from "../../assets/images/logo.png";
-import menuIcons from "../../assets/icons/menu.svg"
-import closeIcon from "../../assets/icons/close.svg"
 
-const NavBar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("srpski");
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
-
-  const handleLanguageChange = (e: { target: { value: SetStateAction<string>; }; }) => {
-    setSelectedLanguage(e.target.value);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <>
-      <nav className="navbar">
-        <img src={logo} alt="Logo" />
-        <div className='navbar-content'>
-          <div className="navbar-links">
-            <input type="text" placeholder="Pretraži..." className="search-input" />
-            <div className="language-dropdown">
-              <select value={selectedLanguage} onChange={handleLanguageChange} className="language-select">
-                <option value="srpski">Srpski</option>
-                <option value="engleski">Engleski</option>
-              </select>
-            </div>
-          </div>
-          <div className="sidebar-toggle" onClick={toggleSidebar}>
-            <img src={menuIcons} className='icon'></img>
+    <nav className="navbar">
+      <div className="flex-row">
+        <div className="navbar-logo">
+          <img src={logo} alt="Logo" className="logo" />
+        </div>
+        <div className={`navbar-links ${isOpen ? "active" : ""}`}>
+          <a href="/">Home</a>
+          <a href="/about">About</a>
+          <a href="/services">Services</a>
+          <a href="/contact">Contact</a>
+          <div className="loginBtn">
+            <button>Login</button>
           </div>
         </div>
-      </nav>
-
-      <div className={`sidebar ${isSidebarOpen ? 'open' : ''}`}>
-      <div className="sidebar-close icon" onClick={toggleSidebar}>
-          <img src={closeIcon} className="icon-close" alt="close" />
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <a href="#">Home</a>
-        <a href="#">Partneri</a>
-        <a href="#">O nama</a>
-        <a href="#">Novosti</a>
-        <a href="#">Razmena</a>
       </div>
-    </>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Navbar;

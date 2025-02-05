@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "three": "^0.172.0"
+    "@heroicons/react": "^2.2.0"
   }
 }
