@@ -17,9 +17,12 @@ const Navbar = () => {
         </div>
         <div className={`navbar-links ${isOpen ? "active" : ""}`}>
           <a href="/">Home</a>
-          <a href="/about">About</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
+          <a href="/about">About us</a>
+          <a href="/services">Exchange</a>
+          <a href="/contact">News</a>
+          <a href="/contact">Partners</a>
+          <a href="/contact">Q&A</a>
+          <a href="/contact">IFMSA Journal</a>
           <div className="loginBtn">
             <button>Login</button>
           </div>

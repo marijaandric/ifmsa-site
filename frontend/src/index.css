@@ -1,32 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 :root {
-    --primary-color: #454292;
-    --primary-color-darker: #34326e;
-    --primary-color-light: #454292c7;
-    --secondary-color: #CC3C3E;
-    --background-color: #f8f9fa;
-    --gray: #D6D6D6;
-    --text-light: white;
-    --text-dark: #1b1b1b;
-    --padding-base: 5rem;
-    --padding-card: 1rem;
-    --padding-button: 0.5rem;
-    --small-text-font-size: 15px;
-    --big-text-font-size: 25px;
-    --title-font-size: 30;
-    --border-radius: 8px;
-    --line-height: 40px;
-    --box-shadow: box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    --gap: 0.7rem;
+  --primary-color: #454292;
+  --primary-color-darker: #34326e;
+  --primary-color-light: #454292c7;
+  --secondary-color: #cc3c3e;
+  --background-color: #f8f9fa;
+  --gray: #d6d6d6;
+  --text-light: white;
+  --text-dark: #1b1b1b;
+  --padding-base: 5rem;
+  --padding-card: 1rem;
+  --padding-button: 0.5rem;
+  --small-text-font-size: 14px;
+  --big-text-font-size: 25px;
+  --title-font-size: 30;
+  --border-radius: 8px;
+  --line-height: 40px;
+  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --gap: 0.7rem;
 }
 
 body {
   color: var(--text-dark);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.big-container
-{
+.big-container {
   padding: var(--padding-base);
 }
 
@@ -34,7 +33,7 @@ a {
   color: var(--text-dark);
 }
 
-button{
+button {
   border-radius: var(--border-radius);
 }
 
@@ -45,7 +44,7 @@ input {
   border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
   font-size: var(--small-text-font-size);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   outline: none;
   transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-sizing: border-box;
@@ -61,8 +60,9 @@ select {
   max-width: 200px;
   padding: 0.4rem 0.6rem;
   border: 2px solid var(--primary-color);
-  border-radius: var(--border-radius);  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
   background-color: var(--background-color);
   color: var(--text-dark);
   cursor: pointer;
@@ -80,8 +80,7 @@ select:hover {
   border-color: var(--primary-color-light);
 }
 
-.flex-row
-{
+.flex-row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -98,13 +97,14 @@ button {
   font-weight: bold;
   background-color: var(--primary-color);
   font-size: var(--small-text-font-size);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-button:hover{
+button:hover {
   background-color: var(--primary-color-darker);
 }
 
-a{
+a,
+p {
   font-size: var(--small-text-font-size);
 }
