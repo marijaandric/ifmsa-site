@@ -1,94 +1,72 @@
 .home-main-pic {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--base-padding);
+  height: 95vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-text {
+  color: var(--text-light);
+  flex: 1;
+  text-align: left;
+  max-width: 800px;
+  text-shadow: var(--text-shadow);
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.home-text p {
+  font-size: var(--title-font-size);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.home-image {
+  flex: 1;
+  text-align: right;
+}
+
+.homeVideo {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.button-red {
+  font-size: 16px;
+  padding: 0.8rem 1rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+@keyframes ellipseMove {
+  0% {
+    transform: translate(0, 0) scale(1);
   }
-  
-  .home-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    height: 80vh;
-    position: relative;
-    overflow: hidden;
+  50% {
+    transform: translate(30px, 20px) scale(1.1);
   }
-  
-  .home-text {
-    flex: 1;
-    text-align: left;
+  100% {
+    transform: translate(0, 0) scale(1);
   }
-  
-  .home-text h1 {
-    font-size: 2.5rem;
-    color: var(--text-dark);
-    margin-bottom: 10px;
-  }
-  
-  .home-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: var(--text-dark);
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: var(--primary-color);
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: var(--primary-color-darker);
-  }
-  
-  .home-image {
-    flex: 1;
-    text-align: right;
-  }
-  
-  .background-ellipse {
-    position: absolute;
-    border-radius: 50%;
-    background-color: rgba(52, 152, 219, 0.2);
-    z-index: -1;
-    pointer-events: none;
-    animation: ellipseMove 8s infinite ease-in-out;
-  }
-  
-  /* .background-ellipse.top {
-    top: -20%;
-    right: -10%;
-    width: 45%;
-    height: 300px;
-  }
-  
-  .background-ellipse.right {
-    bottom: 0%;
-    left: -20%;
-    width: 40%;
-    height: 40%;
-  }
-  
-  .background-ellipse.bottom {
-    bottom: -10%;
-    right: -10%;
-    width: 450px;
-    height: 350px;
-  } */
-  
-  @keyframes ellipseMove {
-    0% {
-      transform: translate(0, 0) scale(1);
-    }
-    50% {
-      transform: translate(30px, 20px) scale(1.1);
-    }
-    100% {
-      transform: translate(0, 0) scale(1);
-    }
-  }
-  
+}

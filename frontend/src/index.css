@@ -3,12 +3,14 @@
   --primary-color: #454292;
   --primary-color-darker: #34326e;
   --primary-color-light: #454292c7;
+  --primary-color-opacity: rgba(69, 66, 146, 0.7);
   --secondary-color: #cc3c3e;
+  --secondary-color-darker: #ae3436;
   --background-color: #f8f9fa;
   --gray: #d6d6d6;
   --text-light: white;
   --text-dark: #1b1b1b;
-  --padding-base: 5rem;
+  --padding-base: 6rem;
   --padding-card: 1rem;
   --padding-button: 0.5rem;
   --small-text-font-size: 14px;
@@ -17,6 +19,7 @@
   --border-radius: 8px;
   --line-height: 40px;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --text-shadow: 2px 2px 5px black;
   --gap: 0.7rem;
   --max-width: 1320px;
 }
@@ -27,15 +30,12 @@ body {
 }
 
 .big-container {
-  padding: var(--padding-base);
+  padding: 10px var(--padding-base);
+  max-width: var(--max-width);
 }
 
 a {
   color: var(--text-dark);
-}
-
-button {
-  border-radius: var(--border-radius);
 }
 
 input {
@@ -86,6 +86,7 @@ button {
   cursor: pointer;
   padding: var(--padding-button);
   min-width: 5rem;
+  padding: 0.5rem 1rem;
   border: none;
   box-shadow: var(--box-shadow);
   color: var(--text-light);
@@ -95,13 +96,24 @@ button {
   font-family: "Montserrat", sans-serif;
 }
 
+.button-red {
+  background-color: var(--secondary-color);
+}
+
 button:hover {
   background-color: var(--primary-color-darker);
+}
+.button-red:hover {
+  background-color: var(--secondary-color-darker);
 }
 
 a,
 p {
   font-size: var(--small-text-font-size);
+}
+
+h1 {
+  margin: 1.5rem 0 1rem 0;
 }
 
 h5 {
