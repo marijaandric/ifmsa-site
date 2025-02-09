@@ -67,79 +67,59 @@ const Footer = () => {
           </div>
           <div className="footer-navbar">
             <div className="footer-navbar-col">
-              <h5>About us</h5>
+              <h5>O nama</h5>
               <ul>
                 <li>
-                  <a href="#"> Who are we </a>
+                  <a href="#"> Ko smo mi </a>
                 </li>
                 <li>
                   <a href="#"> IFMSA </a>
                 </li>
                 <li>
-                  <a href="#"> What we do </a>
+                  <a href="#"> Sta mi radimo </a>
                 </li>
                 <li>
-                  <a href="#"> The Team of Officials </a>
+                  <a href="#"> Tim zvanicnika </a>
                 </li>
                 <li>
-                  <a href="#"> Coordinators </a>
+                  <a href="#"> Koordinatori </a>
                 </li>
                 <li>
-                  <a href="#"> Contact </a>
+                  <a href="#"> Kontakt </a>
                 </li>
                 <li>
-                  <a href="#"> Partners </a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-navbar-col">
-              <h5>Support</h5>
-              <ul>
-                <li>
-                  <a href="#"> Insight </a>
-                </li>
-                <li>
-                  <a href="#"> Analyst </a>
-                </li>
-                <li>
-                  <a href="#"> Marketing </a>
-                </li>
-                <li>
-                  <a href="#"> Commerce </a>
+                  <a href="#"> Partneri </a>
                 </li>
               </ul>
             </div>
             <div className="footer-navbar-col">
-              <h5>Company</h5>
+              <h5>Razmena</h5>
               <ul>
                 <li>
-                  <a href="#"> Analyst </a>
+                  <a href="#"> Prijavi se za razmenu </a>
                 </li>
                 <li>
-                  <a href="#"> Commerce </a>
+                  <a href="#"> SCOPE i SCORE </a>
                 </li>
                 <li>
-                  <a href="#"> Marketing </a>
+                  <a href="#"> Razmena u Srbiji </a>
                 </li>
                 <li>
-                  <a href="#"> Insight </a>
+                  <a href="#"> Utisci sa razmene </a>
                 </li>
               </ul>
             </div>
             <div className="footer-navbar-col">
-              <h5>Legal</h5>
+              <h5>Drugo</h5>
               <ul>
                 <li>
-                  <a href="#"> Commerce </a>
+                  <a href="#"> Novosti </a>
                 </li>
                 <li>
-                  <a href="#"> Analyst </a>
+                  <a href="#"> Q&A </a>
                 </li>
                 <li>
-                  <a href="#"> Insight </a>
-                </li>
-                <li>
-                  <a href="#"> Marketing </a>
+                  <a href="#"> IFMSA Zurnal </a>
                 </li>
               </ul>
             </div>
