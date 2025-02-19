@@ -9,7 +9,9 @@ The Figma project serves as an initial phase and a foundation for further develo
 
 ## Technologies  
 - **Frontend:** React
-- **Backend:** Java  
+- **Backend:** Java Spring Boot
+- **Database:** SQLite
+- **Tools:** Git, Postman
 
 ## Key Features  
 ✅ Overview of IFMSA news and events  
