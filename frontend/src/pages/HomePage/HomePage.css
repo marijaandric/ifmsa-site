@@ -59,14 +59,13 @@
   gap: 1rem;
 }
 
-@keyframes ellipseMove {
-  0% {
-    transform: translate(0, 0) scale(1);
+@media (max-width: 1000px) {
+  .card-container {
+    overflow-x: auto;
+    white-space: nowrap;
   }
-  50% {
-    transform: translate(30px, 20px) scale(1.1);
-  }
-  100% {
-    transform: translate(0, 0) scale(1);
+
+  .card-container > * {
+    flex: 0 0 auto;
   }
 }

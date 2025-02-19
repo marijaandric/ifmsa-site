@@ -11,6 +11,7 @@
   --text-light: white;
   --text-dark: #1b1b1b;
   --padding-base: 6rem;
+  --padding-base-mobile: 3rem;
   --padding-card: 1rem;
   --padding-button: 0.5rem;
   --small-text-font-size: 14px;
@@ -124,14 +125,30 @@ h5 {
   padding: 0 0.5rem 0 0;
 }
 
+.red-text {
+  color: var(--secondary-color);
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
+.space-between {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .big-container {
+    padding: 10px var(--padding-base-mobile);
+  }
 }
