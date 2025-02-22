@@ -11,7 +11,7 @@
   --text-light: white;
   --text-dark: #1b1b1b;
   --padding-base: 11.5rem;
-  --padding-page-image-content: 8rem;
+  --padding-page-image-content: var(--padding-base);
   --padding-base-mobile: 3rem;
   --padding-card: 1rem;
   --padding-button: 0.5rem;
