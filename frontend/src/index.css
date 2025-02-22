@@ -10,7 +10,8 @@
   --gray: #d6d6d6;
   --text-light: white;
   --text-dark: #1b1b1b;
-  --padding-base: 6rem;
+  --padding-base: 11.5rem;
+  --padding-page-image-content: 8rem;
   --padding-base-mobile: 3rem;
   --padding-card: 1rem;
   --padding-button: 0.5rem;
@@ -19,9 +20,9 @@
   --title-font-size: 30;
   --border-radius: 8px;
   --line-height: 40px;
-  --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   --text-shadow: 2px 2px 5px black;
-  --gap: 0.7rem;
+  --gap: 1rem;
   --max-width: 1320px;
 }
 
@@ -87,7 +88,6 @@ button {
   cursor: pointer;
   padding: var(--padding-button);
   min-width: 5rem;
-  padding: 0.5rem 1rem;
   border: none;
   box-shadow: var(--box-shadow);
   color: var(--text-light);
@@ -104,8 +104,13 @@ button {
 button:hover {
   background-color: var(--primary-color-darker);
 }
+
 .button-red:hover {
   background-color: var(--secondary-color-darker);
+}
+
+.big-button {
+  padding: 0.8rem 1.5rem;
 }
 
 a,

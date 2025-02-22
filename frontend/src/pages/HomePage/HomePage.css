@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--base-padding);
+  padding: 0 var(--padding-page-image-content);
   height: 95vh;
   position: relative;
   overflow: hidden;
@@ -47,16 +47,17 @@
   min-height: 100%;
 }
 
-.button-red {
-  font-size: 16px;
-  padding: 0.8rem 1rem;
-}
-
-.card-container {
+.card-container,
+.news-card-container,
+.organization-card-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 1rem;
+  gap: var(--gap);
+}
+
+.organization-card-container > * {
+  flex: 1;
 }
 
 @media (max-width: 1000px) {
@@ -67,5 +68,10 @@
 
   .card-container > * {
     flex: 0 0 auto;
+  }
+
+  .news-card-container {
+    display: flex;
+    flex-direction: column;
   }
 }

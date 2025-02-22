@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--primary-color);
+  text-align: center;
+  color: var(--text-light);
+  padding: 2rem var(--padding-card);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

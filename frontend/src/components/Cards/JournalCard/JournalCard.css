@@ -1,13 +1,12 @@
 .journal-card {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--gap);
   margin-bottom: 20px;
   padding: 20px;
   border: 1px solid var(--gray);
   border-radius: 8px;
   align-items: center;
-  gap: 20px;
   margin-bottom: 20px;
   /* background-color: #f9f9f9; */
 }
