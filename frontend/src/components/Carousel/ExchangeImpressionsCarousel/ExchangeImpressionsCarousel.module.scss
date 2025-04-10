@@ -1,0 +1,80 @@
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 250px;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.impressionsCards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  transition: transform 0.5s ease;
+  gap: 2rem;
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--gray);
+  border: none;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: var(--box-shadow);
+  width: 10px;
+
+  &:hover {
+    background: white;
+  }
+
+  &:first-child {
+    left: 10px;
+    min-width: fit-content;
+    padding: 0.5rem;
+  }
+
+  &:last-child {
+    right: 10px;
+    min-width: fit-content;
+    padding: 0.5rem;
+  }
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary-color-light);
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--primary-color);
+  }
+
+  &.active {
+    background: var(--primary-color-darker);
+  }
+}
