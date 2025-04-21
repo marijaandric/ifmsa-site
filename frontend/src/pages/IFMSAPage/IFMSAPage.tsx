@@ -29,7 +29,7 @@ const IFMSAPage = () => {
       <div className="title-image-container">
         <img src={ifmsaImg} alt="IFMSA" className="header-img" />
         <div className="image-overlay">
-          <h1>Who are we</h1>
+          <h1>IFMSA</h1>
         </div>
       </div>
 
