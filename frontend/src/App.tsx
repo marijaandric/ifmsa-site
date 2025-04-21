@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer/Footer";
+import WhoAreWePage from "./pages/WhoAreWePage/WhoAreWePage";
 
 const App = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/whoAreWe" element={<WhoAreWePage />} />
       </Routes>
 
       <Footer />

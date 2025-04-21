@@ -10,11 +10,12 @@
   --gray: #d6d6d6;
   --text-light: white;
   --text-dark: #1b1b1b;
-  --padding-base: 11.5rem;
+  --padding-base: 10%;
   --padding-page-image-content: var(--padding-base);
   --padding-base-mobile: 3rem;
   --padding-card: 1rem;
   --padding-button: 0.5rem;
+  --margin-base: 2rem;
   --small-text-font-size: 14px;
   --big-text-font-size: 25px;
   --title-font-size: 30;
@@ -114,7 +115,8 @@ button:hover {
 }
 
 a,
-p {
+p,
+li {
   font-size: var(--small-text-font-size);
 }
 
@@ -150,6 +152,24 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.big-image-container,
+.title-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-page-image-content);
+  height: 95vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.title-image-container {
+  height: 40vh;
+  width: 100%;
+  padding: 0;
+  margin-bottom: var(--margin-base);
 }
 
 @media (max-width: 1000px) {

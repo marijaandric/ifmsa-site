@@ -65,7 +65,7 @@ const HomePage = () => {
         <source src={HomeVideo} type="video/mp4" />
       </video>
       <div
-        className="home-container"
+        className="big-image-container"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
