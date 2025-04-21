@@ -8,7 +8,7 @@ import nis from "../../assets/images/city/lknis_grb.png";
 
 const WhoAreWePage = () => {
   return (
-    <div className="who-are-we-page">
+    <div>
       <div className="title-image-container">
         <img src={whoAreWeImg} alt="Who Are We" className="header-img" />
         <div className="image-overlay">

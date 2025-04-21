@@ -6,6 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "./components/Footer/Footer";
 import WhoAreWePage from "./pages/WhoAreWePage/WhoAreWePage";
+import IFMSAPage from "./pages/IFMSAPage/IFMSAPage";
 
 const App = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/whoAreWe" element={<WhoAreWePage />} />
+        <Route path="/ifmsa" element={<IFMSAPage />} />
       </Routes>
 
       <Footer />
